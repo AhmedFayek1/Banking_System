@@ -18,11 +18,11 @@ class NavDrawer extends StatelessWidget {
 
         child: ListView(
           children: [
-            Container(
+            SizedBox(
               height: 250,
               child: DrawerHeader(
                 decoration: BoxDecoration(
-                  color: color,
+                  color: mainColor,
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

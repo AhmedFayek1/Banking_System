@@ -1,6 +1,5 @@
 
-import 'package:banking_system/screeens/view_customer_screen.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:banking_system/screens/view_customer_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -20,7 +19,7 @@ class CustomersScreen extends StatelessWidget {
           var cubit = BankingAppCubit.get(context);
           return Scaffold(
             appBar: AppBar(
-              backgroundColor: color,
+              backgroundColor: mainColor,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back_ios_new),
                 onPressed: () {
@@ -51,7 +50,6 @@ class CustomersScreen extends StatelessWidget {
                 ],
               ),
             )
-                // create button to navigate to transactions screen
           );
         }
     );
@@ -80,7 +78,7 @@ class CustomersScreen extends StatelessWidget {
                   );
                 },
                 child: CircleAvatar(
-                  backgroundColor: color,
+                  backgroundColor: mainColor,
                   radius: 25.0,
                   child: Text('${customer['name'][0]}',style: const TextStyle(color: Colors.white),),
                 ),

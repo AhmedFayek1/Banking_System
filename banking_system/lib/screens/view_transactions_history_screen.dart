@@ -1,8 +1,5 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../Cubit/cubit.dart';
 import '../Cubit/states.dart';
 import '../Shared/colors.dart';
@@ -18,7 +15,7 @@ class TransactionsScreen extends StatelessWidget {
         var cubit = BankingAppCubit.get(context);
         return Scaffold(
           appBar: AppBar(
-            backgroundColor: color,
+            backgroundColor: mainColor,
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_ios_new),
               onPressed: () {
@@ -42,7 +39,7 @@ class TransactionsScreen extends StatelessWidget {
     padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 8),
     child: Card(
       elevation: 20.0,
-      color: color,
+      color: mainColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),

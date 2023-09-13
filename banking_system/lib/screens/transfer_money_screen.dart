@@ -18,7 +18,7 @@ class TransferMoneyScreen extends StatelessWidget {
         TextEditingController money = TextEditingController();
         return Scaffold(
           appBar: AppBar(
-            backgroundColor: color,
+            backgroundColor: mainColor,
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_ios_new),
               onPressed: () {
@@ -28,14 +28,15 @@ class TransferMoneyScreen extends StatelessWidget {
             title: const Text('Transfer Money'),
             centerTitle: true,
           ),
+
+
           body: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Column(
-
               children: [
                 const SizedBox(height: 20,),
                 CircleAvatar(
-                  backgroundColor: color,
+                  backgroundColor: mainColor,
                   radius: 80.0,
                   child: Text('${receiver['name'][0]}',style: const TextStyle(
                       fontSize: 50.0,
@@ -63,7 +64,7 @@ class TransferMoneyScreen extends StatelessWidget {
                 ),
                 Card(
                   elevation: 10,
-                  color: color,
+                  color: mainColor,
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Column(
@@ -91,7 +92,7 @@ class TransferMoneyScreen extends StatelessWidget {
                   width: 200,
                   height: 50.0,
                   decoration: BoxDecoration(
-                    color: color,
+                    color: mainColor,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
 
@@ -103,7 +104,6 @@ class TransferMoneyScreen extends StatelessWidget {
                         builder: (BuildContext context) {
                           return AlertDialog( // <-- SEE HERE
                             title: const Text('Confirmation'),
-
                             content: SingleChildScrollView(
                               child: Column(
                                 children: <Widget>[

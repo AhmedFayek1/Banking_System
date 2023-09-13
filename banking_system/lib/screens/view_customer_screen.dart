@@ -1,6 +1,4 @@
-
-import 'package:banking_system/screeens/transfrer_money_screen.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:banking_system/screens/transfer_money_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -17,10 +15,9 @@ class SelectedCustomer extends StatelessWidget {
     return BlocConsumer<BankingAppCubit,BankingAppStates>(
       listener: (context,state) {},
       builder: (context,state) {
-        var cubit = BankingAppCubit.get(context);
         return Scaffold(
           appBar: AppBar(
-            backgroundColor: color,
+            backgroundColor: mainColor,
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_ios_new),
               onPressed: () {
@@ -35,7 +32,7 @@ class SelectedCustomer extends StatelessWidget {
             child: Column(
               children: [
                 CircleAvatar(
-                  backgroundColor: color,
+                  backgroundColor: mainColor,
                   radius: 80.0,
                   child: Text('${customer['name'][0]}',style: const TextStyle(
                     fontSize: 50.0,
@@ -47,7 +44,7 @@ class SelectedCustomer extends StatelessWidget {
                   height: 40.0,
                 ),
                 Card(
-                  color: color,
+                  color: mainColor,
                   elevation: 50,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)
@@ -150,7 +147,7 @@ class SelectedCustomer extends StatelessWidget {
                   width: double.infinity,
                   height: 50.0,
                   decoration: BoxDecoration(
-                    color: color,
+                    color: mainColor,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: MaterialButton(

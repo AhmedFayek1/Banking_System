@@ -1,15 +1,11 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../Cubit/cubit.dart';
 import '../Cubit/states.dart';
 import '../Shared/colors.dart';
 import 'customers_screen.dart';
 
 class MyProfile extends StatelessWidget {
-
   const MyProfile({Key? key}) : super(key: key);
 
   @override
@@ -20,7 +16,7 @@ class MyProfile extends StatelessWidget {
         var cubit = BankingAppCubit.get(context);
         return Scaffold(
           appBar: AppBar(
-            backgroundColor: color,
+            backgroundColor: mainColor,
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_ios_new),
               onPressed: () {
@@ -35,7 +31,7 @@ class MyProfile extends StatelessWidget {
             child: Column(
               children: [
                 CircleAvatar(
-                  backgroundColor: color,
+                  backgroundColor: mainColor,
                   radius: 80.0,
                   child: Text('${cubit.myAccount!['name'][0]}',style: const TextStyle(
                       fontSize: 50.0,
@@ -47,7 +43,7 @@ class MyProfile extends StatelessWidget {
                   height: 40.0,
                 ),
                 Card(
-                  color: color,
+                  color: mainColor,
                   elevation: 15,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)
@@ -150,7 +146,7 @@ class MyProfile extends StatelessWidget {
                   width: double.infinity,
                   height: 50.0,
                   decoration: BoxDecoration(
-                    color: color,
+                    color: mainColor,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: MaterialButton(

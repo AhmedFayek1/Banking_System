@@ -1,13 +1,11 @@
-
-import 'package:banking_system/screeens/view_transactions_history.dart';
+import 'package:banking_system/screens/view_transactions_history_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../Cubit/cubit.dart';
 import '../Cubit/states.dart';
 import '../Shared/colors.dart';
 import 'customers_screen.dart';
-import 'my_profile.dart';
+import 'my_profile_screen.dart';
 import 'nav_drawer.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -76,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 50,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: color,
+                      color: mainColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: MaterialButton(
@@ -96,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 50,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: color,
+                      color: mainColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: MaterialButton(
@@ -116,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 50,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: color,
+                      color: mainColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: MaterialButton(
@@ -128,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         );
                       },
-                      child: const Text('Transaction History',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
+                      child: const Text('Transaction history',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
                     ),
                   ),
                 ],

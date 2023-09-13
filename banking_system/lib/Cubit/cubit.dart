@@ -136,7 +136,7 @@ class BankingAppCubit extends Cubit<BankingAppStates> {
     await insertTransactionData(
       transaction: CustomerTransaction(
         id: databaseTransactions.length + 1,
-        sender: '${myAccount!['name']} You',
+        sender: '${myAccount!['name']} (You)',
         receiver: receiver['name'],
         amount: amount,
         date: DateTime.now().toString().substring(0, 10),
