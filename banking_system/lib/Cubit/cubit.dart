@@ -52,8 +52,8 @@ class BankingAppCubit extends Cubit<BankingAppStates> {
 
   Future<void> insertDummyData() async {
 
-    for (int i = 0; i < customers.length ; i++) {
-      await insertCustomerData(customer: customers[i]);
+    for (int i = 0; i < bankCustomers.length ; i++) {
+      await insertCustomerData(customer: bankCustomers[i]);
     }
   }
 

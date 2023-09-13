@@ -26,7 +26,7 @@ class Customer
 }
 
 
-List<Customer> customers = [
+List<Customer> bankCustomers = [
   Customer(id: 1,name: "Ahmed Fayek",email: "ahmed@gmail.com",address: "Cairo",balance: 10000),
   Customer(id: 2,name: "Danial Jack",email: "danial@gmail.com",address: "New York",balance: 1000),
   Customer(id: 3,name: "Steven Rock",email: "steven@gmail.com",address: "London",balance: 2000),
