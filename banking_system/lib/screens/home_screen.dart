@@ -36,9 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
               actions: [
                 IconButton(
                   icon: const Icon(Icons.notifications,color: Colors.black,size: 30,),
-                  onPressed: () {
-
-                  },
+                  onPressed: () {},
                 ),
                 IconButton(
                   icon: const Icon(Icons.person,color: Colors.black,size: 30,),
